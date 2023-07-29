@@ -22,6 +22,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --bs-primary: #2B0C04 !important;
+  --bs-secondary: #5CE1E6 !important
+  }
 
 h1,
 h2,
@@ -590,6 +594,17 @@ p {
   text-align: left;
 }
 
+.about-descr .btn{
+  background-color: var(--bs-primary);
+}
+
+.about-descr .btn:hover{
+  color: var(--bs-primary);
+  background-color: transparent;
+  border: 1px solid #2c0c04;
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -642,6 +657,9 @@ p {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.btn-portfolio{
+  justify-content: center;
+}
 #portfolio {
   position: relative;
   padding-bottom: 50px;
@@ -1545,4 +1563,30 @@ blockquote {
     display: inline-block;
     margin-right: 0;
   }
+}
+
+/*--------------------------------------------------------------
+# TEAM
+--------------------------------------------------------------*/
+
+.container h2{
+  color: var(--bs-primary);
+  padding: 3rem 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.container .card:hover{
+  scroll-behavior: smooth;
+  transition: ease-in-out;
+  border: 10px solid var(--bs-secondary);
+}
+
+.container div{
+  padding-bottom: 1rem;
+}
+
+.container a:hover{
+  color: var(--bs-primary);
+  text-decoration: underline;
 }
